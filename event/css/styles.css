@@ -1,0 +1,21 @@
+.show-hide-para {
+    display: none;
+}
+
+.show-hide-para2 {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    /* si le texte dépasse on le cahe */
+    overflow: hidden;
+    transition: all 2s ease;
+}
+
+.show-hide-para2.open {
+    height: 200px;
+    width: 100%;
+    opacity: 1;
+    background-color: aqua;
+    transition: all 2s ease;
+
+}
