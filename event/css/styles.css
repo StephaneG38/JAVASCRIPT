@@ -19,3 +19,14 @@
     transition: all 2s ease;
 
 }
+
+.liste-menu {
+    display: none;
+}
+
+nav#version2 ul {
+    display: none;
+  }
+  nav#version2 ul.open {
+    display: block;
+  }
