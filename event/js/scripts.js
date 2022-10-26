@@ -141,7 +141,7 @@ changeimg()
 function menuburger2() {
     const defaultBurgerSrc = document.querySelector(".img-burger2").getAttribute("src");
     const clickToBurger = document.querySelector(".img-burger2");
-    // const lmenu = document.querySelector(".liste-menu");
+    const lmenu = document.querySelector(".liste-menu");
     let isMenuOpen = false;
     clickToBurger.addEventListener(`click`, function (e) { 
         document.querySelector("header nav#version2 ul").classList.toggle("open");                       
@@ -150,7 +150,7 @@ function menuburger2() {
             clickToBurger.setAttribute("src", "./img/hamburger-on.png");
             isMenuOpen = true
         } else {
-            lmenu.style.display = "none";
+            document.querySelector(".liste-menu").style.display = "none";
             clickToBurger.setAttribute("src", defaultBurgerSrc);
             isMenuOpen = false
         }
